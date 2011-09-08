@@ -17,21 +17,17 @@ function wysiwyg_starter_input_formats() {
   $input_format->settings = array(
     // Settings for: filter module
     'filter' => array(
-      // Maximum link text length
       'filter_url_length' => '72',
     ),
     // Settings for: wysiwyg_filter module
     'wysiwyg_filter' => array(
-      // HTML elements and attributes
       'wysiwyg_filter_valid_elements_raw' => 'a[!href|target<_blank|title],
 div[align<center?justify?left?right],
 p[align<center?justify?left?right],
 br,span,em,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd,
 iframe[*],
 img[*]',
-      // HTML comments
       'wysiwyg_filter_allow_comments' => '0',
-      // Color and background properties
       'wysiwyg_filter_styles_color' => array(
           'color' => 0,
           'background' => 0,
@@ -41,7 +37,6 @@ img[*]',
           'background-attachment' => 0,
           'background-position' => 0,
         ),
-      // Font properties
       'wysiwyg_filter_styles_font' => array(
           'font' => 0,
           'font-family' => 0,
@@ -52,7 +47,6 @@ img[*]',
           'font-variant' => 0,
           'font-weight' => 0,
         ),
-      // Text properties
       'wysiwyg_filter_styles_text' => array(
           'text-align' => 'text-align',
           'text-decoration' => 'text-decoration',
@@ -64,7 +58,6 @@ img[*]',
           'direction' => 0,
           'unicode-bidi' => 0,
         ),
-      // Box properties
       'wysiwyg_filter_styles_box' => array(
           'margin' => 'margin',
           'margin-top' => 'margin-top',
@@ -77,7 +70,6 @@ img[*]',
           'padding-bottom' => 'padding-bottom',
           'padding-left' => 'padding-left',
         ),
-      // Border properties (1)
       'wysiwyg_filter_styles_border-1' => array(
           'border' => 'border',
           'border-top' => 'border-top',
@@ -90,7 +82,6 @@ img[*]',
           'border-bottom-width' => 'border-bottom-width',
           'border-left-width' => 'border-left-width',
         ),
-      // Border properties (2)
       'wysiwyg_filter_styles_border-2' => array(
           'border-color' => 'border-color',
           'border-top-color' => 'border-top-color',
@@ -103,7 +94,6 @@ img[*]',
           'border-bottom-style' => 'border-bottom-style',
           'border-left-style' => 'border-left-style',
         ),
-      // Dimension properties
       'wysiwyg_filter_styles_dimension' => array(
           'height' => 'height',
           'line-height' => 'line-height',
@@ -113,7 +103,6 @@ img[*]',
           'min-height' => 0,
           'min-width' => 0,
         ),
-      // Positioning properties
       'wysiwyg_filter_styles_positioning' => array(
           'bottom' => 'bottom',
           'left' => 'left',
@@ -124,7 +113,6 @@ img[*]',
           'clip' => 0,
           'vertical-align' => 0,
         ),
-      // Layout properties
       'wysiwyg_filter_styles_layout' => array(
           'clear' => 'clear',
           'display' => 'display',
@@ -132,14 +120,12 @@ img[*]',
           'position' => 'position',
           'visibility' => 'visibility',
         ),
-      // List properties
       'wysiwyg_filter_styles_list' => array(
           'list-style' => 'list-style',
           'list-style-image' => 0,
           'list-style-position' => 0,
           'list-style-type' => 0,
         ),
-      // Table properties
       'wysiwyg_filter_styles_table' => array(
           'border-collapse' => 0,
           'border-spacing' => 0,
@@ -147,7 +133,6 @@ img[*]',
           'empty-cells' => 0,
           'table-layout' => 0,
         ),
-      // User interface properties
       'wysiwyg_filter_styles_user' => array(
           'cursor' => 0,
           'outline' => 0,
@@ -156,19 +141,13 @@ img[*]',
           'outline-color' => 0,
           'zoom' => 0,
         ),
-      // Rules for Class Names
       'wysiwyg_filter_valid_classes' => array(
           0 => 'caption',
         ),
-      // Rules for Element IDs
       'wysiwyg_filter_valid_ids' => array(),
-      // Rules for URLs used within inline styles
       'wysiwyg_filter_style_urls' => array(),
-      // Policy
       'wysiwyg_filter_nofollow_policy' => 'disabled',
-      // Domains list
       'wysiwyg_filter_nofollow_domains' => array(),
-      // Valid elements parsed
       'wysiwyg_filter_valid_elements_parsed' => array(
           'a' => array(
             'href' => array(
@@ -225,17 +204,13 @@ img[*]',
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '0',
-      // Delta => Weight for: HTML corrector
       '3' => '10',
     ),
     'image_caption_filter' => array(
-      // Delta => Weight for: Image caption filter
       '0' => '10',
     ),
     'wysiwyg_filter' => array(
-      // Delta => Weight for: WYSIWYG Filter
       '0' => '10',
     ),
   );
@@ -251,17 +226,13 @@ img[*]',
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '0',
     ),
     'image_caption_filter' => array(
-      // Delta => Weight for: Image caption filter
       '0' => '10',
     ),
     'shortcode' => array(
-      // Delta => Weight for: Shortcodes
       '0' => '10',
-      // Delta => Weight for: Shortcodes - html corrector
       '1' => '10',
     ),
   );
@@ -276,21 +247,17 @@ img[*]',
   $input_format->settings = array(
     // Settings for: filter module
     'filter' => array(
-      // Maximum link text length
       'filter_url_length' => '72',
     ),
     // Settings for: wysiwyg_filter module
     'wysiwyg_filter' => array(
-      // HTML elements and attributes
       'wysiwyg_filter_valid_elements_raw' => 'a[!href|target<_blank|title],
 div[align<center?justify?left?right],
 p[align<center?justify?left?right],
 br,span,em,strong,cite,code,blockquote,ul,ol,li,dl,dt,dd,
 iframe[*],
 img[*]',
-      // HTML comments
       'wysiwyg_filter_allow_comments' => '0',
-      // Color and background properties
       'wysiwyg_filter_styles_color' => array(
           'background-image' => 'background-image',
           'background-position' => 'background-position',
@@ -300,7 +267,6 @@ img[*]',
           'background-repeat' => 0,
           'background-attachment' => 0,
         ),
-      // Font properties
       'wysiwyg_filter_styles_font' => array(
           'font' => 0,
           'font-family' => 0,
@@ -311,7 +277,6 @@ img[*]',
           'font-variant' => 0,
           'font-weight' => 0,
         ),
-      // Text properties
       'wysiwyg_filter_styles_text' => array(
           'text-align' => 'text-align',
           'text-decoration' => 'text-decoration',
@@ -323,7 +288,6 @@ img[*]',
           'direction' => 0,
           'unicode-bidi' => 0,
         ),
-      // Box properties
       'wysiwyg_filter_styles_box' => array(
           'margin' => 'margin',
           'margin-top' => 'margin-top',
@@ -336,7 +300,6 @@ img[*]',
           'padding-bottom' => 'padding-bottom',
           'padding-left' => 'padding-left',
         ),
-      // Border properties (1)
       'wysiwyg_filter_styles_border-1' => array(
           'border' => 'border',
           'border-top' => 'border-top',
@@ -349,7 +312,6 @@ img[*]',
           'border-bottom-width' => 'border-bottom-width',
           'border-left-width' => 'border-left-width',
         ),
-      // Border properties (2)
       'wysiwyg_filter_styles_border-2' => array(
           'border-color' => 'border-color',
           'border-top-color' => 'border-top-color',
@@ -362,7 +324,6 @@ img[*]',
           'border-bottom-style' => 'border-bottom-style',
           'border-left-style' => 'border-left-style',
         ),
-      // Dimension properties
       'wysiwyg_filter_styles_dimension' => array(
           'height' => 'height',
           'width' => 'width',
@@ -372,7 +333,6 @@ img[*]',
           'min-height' => 0,
           'min-width' => 0,
         ),
-      // Positioning properties
       'wysiwyg_filter_styles_positioning' => array(
           'bottom' => 'bottom',
           'left' => 'left',
@@ -383,7 +343,6 @@ img[*]',
           'overflow' => 0,
           'vertical-align' => 0,
         ),
-      // Layout properties
       'wysiwyg_filter_styles_layout' => array(
           'clear' => 'clear',
           'display' => 'display',
@@ -391,14 +350,12 @@ img[*]',
           'position' => 'position',
           'visibility' => 'visibility',
         ),
-      // List properties
       'wysiwyg_filter_styles_list' => array(
           'list-style' => 'list-style',
           'list-style-image' => 'list-style-image',
           'list-style-position' => 'list-style-position',
           'list-style-type' => 'list-style-type',
         ),
-      // Table properties
       'wysiwyg_filter_styles_table' => array(
           'border-collapse' => 0,
           'border-spacing' => 0,
@@ -406,7 +363,6 @@ img[*]',
           'empty-cells' => 0,
           'table-layout' => 0,
         ),
-      // User interface properties
       'wysiwyg_filter_styles_user' => array(
           'cursor' => 0,
           'outline' => 0,
@@ -415,19 +371,13 @@ img[*]',
           'outline-color' => 0,
           'zoom' => 0,
         ),
-      // Rules for Class Names
       'wysiwyg_filter_valid_classes' => array(
           0 => 'caption',
         ),
-      // Rules for Element IDs
       'wysiwyg_filter_valid_ids' => array(),
-      // Rules for URLs used within inline styles
       'wysiwyg_filter_style_urls' => array(),
-      // Policy
       'wysiwyg_filter_nofollow_policy' => 'disabled',
-      // Domains list
       'wysiwyg_filter_nofollow_domains' => array(),
-      // Valid elements parsed
       'wysiwyg_filter_valid_elements_parsed' => array(
           'a' => array(
             'href' => array(
@@ -484,17 +434,13 @@ img[*]',
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '0',
-      // Delta => Weight for: HTML corrector
       '3' => '10',
     ),
     'image_caption_filter' => array(
-      // Delta => Weight for: Image caption filter
       '0' => '10',
     ),
     'wysiwyg_filter' => array(
-      // Delta => Weight for: WYSIWYG Filter
       '0' => '10',
     ),
   );
@@ -509,19 +455,15 @@ img[*]',
   $input_format->settings = array(
     // Settings for: filter module
     'filter' => array(
-      // Maximum link text length
       'filter_url_length' => '72',
     ),
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '0',
-      // Delta => Weight for: HTML corrector
       '3' => '10',
     ),
     'image_caption_filter' => array(
-      // Delta => Weight for: Image caption filter
       '0' => '10',
     ),
   );
@@ -538,23 +480,16 @@ img[*]',
   $input_format->settings = array(
     // Settings for: filter module
     'filter' => array(
-      // Filter HTML tags
       'filter_html' => '1',
-      // Allowed HTML tags
       'allowed_html' => '<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd>',
-      // Display HTML help
       'filter_html_help' => 1,
-      // Spam link deterrent
       'filter_html_nofollow' => 1,
     ),
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '0',
-      // Delta => Weight for: HTML filter
       '0' => '10',
-      // Delta => Weight for: HTML corrector
       '3' => '10',
     ),
   );
