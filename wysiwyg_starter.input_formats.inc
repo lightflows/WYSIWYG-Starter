@@ -18,21 +18,16 @@ function wysiwyg_starter_input_formats() {
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '10',
     ),
     'image_caption_filter' => array(
-      // Delta => Weight for: Image caption filter
       '0' => '10',
     ),
     'shortcode' => array(
-      // Delta => Weight for: Shortcodes
       '0' => '10',
-      // Delta => Weight for: Shortcodes - html corrector
       '1' => '10',
     ),
     'wysiwyg_filter' => array(
-      // Delta => Weight for: WYSIWYG Filter
       '0' => '10',
     ),
   );
@@ -48,17 +43,13 @@ function wysiwyg_starter_input_formats() {
   );
   $input_format->filters = array(
     'filter' => array(
-      // Delta => Weight for: URL filter
       '2' => '10',
-      // Delta => Weight for: HTML corrector
       '3' => '10',
     ),
     'image_caption_filter' => array(
-      // Delta => Weight for: Image caption filter
       '0' => '10',
     ),
     'wysiwyg_filter' => array(
-      // Delta => Weight for: WYSIWYG Filter
       '0' => '10',
     ),
   );
